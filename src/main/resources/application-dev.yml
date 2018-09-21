@@ -1,18 +1,17 @@
-server:
-    port: 8182
+
 
 spring:
     application:
-        name: xxl-job-admin
+        name: jedi-job-admin
     jackson:
         date-format: yyyy-MM-dd HH:mm:ss
         time-zone: GMT+8
         default-property-inclusion: non_null
     datasource:
         name: test
-        url: jdbc:mysql://172.17.13.13:3306/xxl-job?useUnicode=true&characterEncoding=UTF-8&useSSL=true
-        username: xxl
-        password: xxl123
+        url: jdbc:mysql://rm-2ze41lui7lm025267o.mysql.rds.aliyuncs.com:3306/db_jedi_job_dev?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+        username: test
+        password: Test@hfq
         # druid
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
@@ -23,7 +22,7 @@ spring:
         minIdle: 1
         timeBetweenEvictionRunsMillis: 60000
         minEvictableIdleTimeMillis: 300000
-        validationQuery: select 'x'
+        validationQuery: select 1
         testWhileIdle: true
         testOnBorrow: false
         testOnReturn: false
@@ -63,20 +62,20 @@ quartz:
 #xxl-job配置
 xxl:
     job:
-        ### xxl-job email
+        ### jedi-job email
         mail:
-            host: smtp.163.com
+            host: smtp.exmail.qq.com
             port: 25
-            username: xx@xx
-            password: 123456
-            sendNick: '《任务调度平台XXL-JOB》'
-        ### xxl-job login
+            username: zhifu@huizhaofang.com
+            password: h8a6b9RLPd
+            sendNick: '《任务调度平台JEDI-JOB》'
+        ### jedi-job login
         login:
             username: admin
             password: 123456
-        ### xxl-job, access token
+        ### jedi-job, access token
         accessToken: ''
-        ### xxl-job, i18n (default empty as chinese, "en" as english)
+        ### jedi-job, i18n (default empty as chinese, "en" as english)
         i18n: ''
     #执行器基础定义
     jobInfo:
@@ -98,4 +97,4 @@ logging:
     level:
         root: info
         xxl.job.admin: debug
-    path: /Users/wfeng/efuture/workspaces/ews-all/engine-spark/logs
+    path: /data/logs/jedi-job

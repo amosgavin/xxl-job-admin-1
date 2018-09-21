@@ -1,1 +1,1 @@
-# xxl-job-admin
+# jedi-job-admin

@@ -67,7 +67,7 @@
 <#macro commonHeader>
 <header class="main-header">
     <a href="${request.contextPath}/" class="logo">
-        <span class="logo-mini"><b>XXL</b></span>
+        <span class="logo-mini"><b>JEDI</b></span>
         <span class="logo-lg"><b>${I18n.admin_name}</b></span>
     </a>
     <nav class="navbar navbar-static-top" role="navigation">
@@ -99,8 +99,6 @@
                     class="fa fa-circle-o text-yellow"></i><span>${I18n.joblog_name}</span></a></li>
             <li class="nav-click <#if pageName == "jobgroup">active</#if>"><a href="${request.contextPath}/jobgroup"><i
                     class="fa fa-circle-o text-green"></i><span>${I18n.jobgroup_name}</span></a></li>
-            <li class="nav-click <#if pageName == "help">active</#if>"><a href="${request.contextPath}/help"><i
-                    class="fa fa-circle-o text-gray"></i><span>${I18n.job_help}</span></a></li>
         </ul>
     </section>
     <!-- /.sidebar -->
@@ -186,12 +184,9 @@
 
 <#macro commonFooter >
 <footer class="main-footer">
-    Powered by <b>XXL-JOB</b> ${I18n.admin_version}
+    Powered by <b>JEDI-JOB</b> ${I18n.admin_version}
     <div class="pull-right hidden-xs">
         <strong>Copyright &copy; 2015-${.now?string('yyyy')} &nbsp;
-            <a href="http://www.xuxueli.com/" target="_blank">xuxueli</a>
-            &nbsp;
-            <a href="https://github.com/xuxueli/xxl-job" target="_blank">github</a>
         </strong><!-- All rights reserved. -->
     </div>
 </footer>

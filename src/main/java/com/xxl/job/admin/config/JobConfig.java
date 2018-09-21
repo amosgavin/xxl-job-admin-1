@@ -13,7 +13,7 @@ import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 import javax.sql.DataSource;
 
 /**
- * XXL-Job-Admin 调度配置
+ * JEDI-Job-Admin 调度配置
  * <p>
  * Created by wfeng on 2018/6/4.
  */

@@ -219,7 +219,7 @@ public class DemoGlueJobHandler extends IJobHandler {
 
 	@Override
 	public ReturnT<String> execute(String param) throws Exception {
-		XxlJobLogger.log("XXL-JOB, Hello World.");
+		XxlJobLogger.log("JEDI-JOB, Hello World.");
 		return ReturnT.SUCCESS;
 	}
 

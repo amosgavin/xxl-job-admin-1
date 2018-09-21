@@ -1,8 +1,11 @@
 spring:
   application:
-    name: xxl-job-admin
+    name: jedi-job-admin
   profiles:
     active: dev
+
+server:
+    port: 12128
 
 ##Druid config
 druid:
